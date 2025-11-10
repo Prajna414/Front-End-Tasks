@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ballbouncing</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            height:600px;
+        }
+        .ball{
+            height: 200px;
+            width:200px;
+            animation:bounce 2s ease infinite;
+        }
+        @keyframes bounce{
+            0%{
+                transform: translateY(0);
+            }
+            25%{
+                transform: translateY(250px) rotate(240deg) ;
+            }
+            50%{
+                transform: translateY(600px) rotate(-240deg) skew(30deg);
+            }
+            75%{
+                transform: translateY(450px) ;
+            }
+            100%{
+                transform: translateX(0);
+            }
+           
+        }
+    </style>
+</head>
+<body>
+    <div class="ball">
+        <img height="200px" width="200px"src="http://clipart-library.com/newimages/soccer-ball-clip-art-15.png" alt="">
+    </div>
+</body>
+</html>
