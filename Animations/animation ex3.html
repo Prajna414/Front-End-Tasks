@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            height: 600px;
+            
+        }
+        .ball{
+            height: 200px;
+            width: 200px;
+            animation: bounce 3s ease infinite;
+            padding-right: 90px;
+        }
+        
+        @keyframes bounce{
+            0%{
+                transform: translateY(0);
+            }
+            50%{
+                transform: translateY(500px);
+            }
+            100%{
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="ball">
+        <img height="200px" width="200px" src="https://i.pinimg.com/474x/69/52/88/69528895726f32fc384babcde61a535a.jpg" alt="">
+    </div>
+    <div class="ball">
+        <img height="200px" width="200px" src="https://cdn.britannica.com/72/232772-050-4E3D86CC/mind-blown-emoji-head-exploding-emoticon.jpg" alt="">
+    </div>
+</body>
+</html>
